@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="WINDOWS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WINDOWS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#2F4F7F">
+        <TextBlock Text="LOGIN" FontSize="40"
+                   HorizontalAlignment="Center"
+                   Padding="20"/>
+
+
+
+        <StackPanel HorizontalAlignment="Center" 
+                    
+            Orientation="Vertical"
+            Background="#3498db"
+            CornerRadius="2"
+            VerticalAlignment="Center"
+            >
+            <TextBlock Text="USERNAME" FontSize="30"
+               HorizontalAlignment="Left"
+               Margin="0,50,0,0"
+               Foreground="White" 
+               />
+
+            <TextBox CornerRadius="4" x:Name="usertbx"
+         FontSize="20" 
+         Margin="180,-45,10,0"
+         PlaceholderText="ENTER USERNAME 
+         "/>
+
+
+            <TextBlock Text="PASSWORD" Foreground="White"
+               HorizontalAlignment="Left"
+               FontSize="30" 
+    Margin="0,30,0,0"/>
+            <PasswordBox CornerRadius="4"
+              FontSize="20" 
+              Margin="180,-45,10,0" x:Name="pass"
+               PlaceholderText=" ENTER PASSWORD"/>
+            <Button x:Name="LOGIN" Content="LOGIN" 
+            Margin="0,10,30,0"
+            Background="#95a5a6 "
+            CornerRadius="2"
+            HorizontalAlignment="Center"                   
+                    Click="loginBtn"  />
+           
+
+           
+        </StackPanel>
+    </Grid>
+</Page>
